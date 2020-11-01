@@ -1,216 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Hollingbourne Hill Cabinet - Community Action to Improve our Internet Service</title>
-    <style>
-
-h2 {
-    text-align: center;
-    padding-top: 1em;
-}
-
-h4 {
-    text-align: center;
-    color: #777;
-}
-.bs-callout {
-  padding: 20px;
-  margin: 20px 0;
-  border: 1px solid #eee;
-  border-left-width: 5px;
-  border-radius: 4px;
-  margin-left: 50px;
-}
-.bs-callout-xl {
-  margin-left: 0px;
-}
-.bs-callout-lg {
-  margin-left: 50px;
-}
-.bs-callout-md {
-  margin-left: 100px;
-}
-.bs-callout-sm {
-  margin-left: 150px;
-}
-.bs-callout-xs {
-  margin-left: 200px;
-}
-.bs-callout h5 {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-.bs-callout p:last-child {
-  margin-bottom: 0;
-}
-.bs-callout code {
-  border-radius: 4px;
-}
-.bs-callout+.bs-callout {
-  margin-top: -5px;
-}
-.bs-callout-default {
-  border-left-color: rgb(220, 220, 220);
-  background-color: #f7f7f9;
-}
-.bs-callout-default h5 {
-  color: rgb(220, 220, 220);
-}
-.bs-callout-primary {
-  border-left-color: #428bca;
-}
-.bs-callout-primary h5 {
-  color: #428bca;
-}
-.bs-callout-success {
-  border-left-color: #155724;
-  background-color: #d4edda;
-}
-.bs-callout-success h5 {
-  color: #155724;
-}
-.bs-callout-danger {
-  border-left-color: #d9534f;
-  background-color: #fcf2f2;
-}
-.bs-callout-danger h5 {
-  color: #d9534f;
-}
-.bs-callout-warning {
-  border-left-color: #f0ad4e;
-  background-color: #fefbed;
-}
-.bs-callout-warning h5 {
-  color: #f0ad4e;
-}
-.bs-callout-info {
-  border-left-color: #5bc0de;
-  background-color: #f0f7fd;
-}
-.bs-callout-info h5 {
-  color: #5bc0de;
-}
-
-.bs-callout-default.transparent {
-  background-color: rgb(247, 247, 249, 0.7); 
-}
-.bs-callout-success.transparent {
-  background-color: rgb(239, 255, 232, 0.7); 
-}
-.bs-callout-warning.transparent {
-  background-color: rgb(254, 251, 237, 0.7); 
-}
-.bs-callout-danger.transparent {
-  background-color: rgb(252, 242, 242, 0.7); 
-}
-.bs-callout-info.transparent {
-  background-color: rgb(240, 247, 253, 0.7); 
-}
-.bs-callout.disabled {
-  opacity: 0.5;
-}
-
-    </style>
+  <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176728896-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <title>Hollingbourne Hill Cabinet - Community Action to Improve our Internet Service</title>
+  <style>
 
-  gtag('config', 'UA-176728896-1');
-</script>
+  h2 {
+      text-align: center;
+      padding-top: 1em;
+  }
+
+  h4 {
+      text-align: center;
+      color: #777;
+  }
+  .bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 4px;
+    margin-left: 50px;
+  }
+  .bs-callout-xl {
+    margin-left: 0px;
+  }
+  .bs-callout-lg {
+    margin-left: 50px;
+  }
+  .bs-callout-md {
+    margin-left: 100px;
+  }
+  .bs-callout-sm {
+    margin-left: 150px;
+  }
+  .bs-callout-xs {
+    margin-left: 200px;
+  }
+  .bs-callout h5 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .bs-callout p:last-child {
+    margin-bottom: 0;
+  }
+  .bs-callout code {
+    border-radius: 4px;
+  }
+  .bs-callout+.bs-callout {
+    margin-top: -5px;
+  }
+  .bs-callout-default {
+    border-left-color: rgb(220, 220, 220);
+    background-color: #f7f7f9;
+  }
+  .bs-callout-default h5 {
+    color: rgb(220, 220, 220);
+  }
+  .bs-callout-primary {
+    border-left-color: #007bff;
+  }
+  .bs-callout-primary h5 {
+    color: #007bff;
+  }
+  .bs-callout-success {
+    border-left-color: #155724;
+    background-color: #d4edda;
+  }
+  .bs-callout-success h5 {
+    color: #155724;
+  }
+  .bs-callout-danger {
+    border-left-color: #d9534f;
+    background-color: #fcf2f2;
+  }
+  .bs-callout-danger h5 {
+    color: #d9534f;
+  }
+  .bs-callout-warning {
+    border-left-color: #f0ad4e;
+    background-color: #fefbed;
+  }
+  .bs-callout-warning h5 {
+    color: #f0ad4e;
+  }
+  .bs-callout-info {
+    border-left-color: #5bc0de;
+    background-color: #f0f7fd;
+  }
+  .bs-callout-info h5 {
+    color: #5bc0de;
+  }
+
+  .bs-callout-default.transparent {
+    background-color: rgb(247, 247, 249, 0.7); 
+  }
+  .bs-callout-success.transparent {
+    background-color: rgb(239, 255, 232, 0.7); 
+  }
+  .bs-callout-warning.transparent {
+    background-color: rgb(254, 251, 237, 0.7); 
+  }
+  .bs-callout-danger.transparent {
+    background-color: rgb(252, 242, 242, 0.7); 
+  }
+  .bs-callout-info.transparent {
+    background-color: rgb(240, 247, 253, 0.7); 
+  }
+  .bs-callout.disabled {
+    opacity: 0.5;
+  }
+
+  </style>
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176728896-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176728896-1');
+      </script>
 </head>
 <body>
   <div class="container">
     <h2>Hollingbourne Hill Cabinet</h2> 
     <h4>Community Action to Improve our Internet Service</h4>
-    <div class="bs-callout bs-callout-primary bs-callout-xl">
-      <h5>Update 21st Sep</h5>
-      After submitting the addresses and telephone numbers of those who expressed support of a Hollingbourne Hill cabinet to the Openreach, they responded on 21st Sep with the below:<br>
-      <div class="bs-callout bs-callout-default bs-callout-xl">
-        <i>
-          Thank you for providing the list of addresses you wish to be included in the Community Fibre Project. We have now done an initial investigation and gathered the info we need in order to send this over to our planning team to provide an initial cost (ball park figure) – this may take 10-15 working days.<br><br>
-          Once these costs have been determined, we can move on to the next stage. Some areas may be eligible for vouchers to part fund a project. Please note, this is not something Openreach have any power over and it is down to the Department of Digital, Media, Culture and Sport (DCMS). The vouchers are based on area and eligibility.<br><br>
-          We will keep you informed throughout the process and let you know of any further information we need as we progress.<br>
-        </i>
+
+    
+    <!-- Tab Headers -->
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <!-- Nov Head -->
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="pills-nov-tab" data-toggle="pill" href="#pills-nov" role="tab" aria-controls="pills-nov" aria-selected="true">Update: 1st Nov</a>
+      </li>
+      <!-- Sep Head -->
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-sep-tab" data-toggle="pill" href="#pills-sep" role="tab" aria-controls="pills-sep" aria-selected="false">Update: 21st Sep</a>
+      </li>
+      <!-- Proposal Head -->
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-proposal-tab" data-toggle="pill" href="#pills-proposal" role="tab" aria-controls="pills-proposal" aria-selected="false">Proposal</a>
+      </li>
+    </ul>
+    <!-- tab content -->
+    <div class="tab-content" id="pills-tabContent">
+      <!-- Nov Update -->
+      <div class="tab-pane fade show active" id="pills-nov" role="tabpanel" aria-labelledby="pills-nov-tab">
+        <div class="bs-callout bs-callout-primary bs-callout-xl">
+          <h5>Update 1st Nov</h5>
+          After chasing Openreach for a response this week (which should have taken 10-15 working days from Sep 21st), they've respondeded this afternoon with the below:<br>
+          <div class="bs-callout bs-callout-default bs-callout-xl">
+            <i>
+              I’m sorry there has been a large delay in our response, we’re experiencing an extremely high amount of customer contacts at present which is having an effect on our usual response time.<br><br>
+              I can confirm your project is still with our planning team however it has gone straight to final pricing. Normally we’d provide an initial costing for providing fibre broadband to you and your community.  However, upon investigation in to your area, it appears there could be government funding available which could cover the majority or all of the network build costs. This is subject to eligibility and terms and conditions. <br><br>
+              Because of this, we can move straight on to the final offer stage. This can take up to 6 weeks and is the next stage in the process. This means we are saving time and have a head start on the process for your community.<br><br>
+              In the meantime if you have any questions then please don’t hesitate to contact us.<br>
+            </i>
+          </div>
+    
+            This is excellent news. As usual, any updates will be posted here. <br>
+        </div>
+      </div>
+      <!-- Sep Update -->
+      <div class="tab-pane fade" id="pills-sep" role="tabpanel" aria-labelledby="pills-sep-tab">
+        <div class="bs-callout bs-callout-primary bs-callout-xl">
+          <h5>Update 21st Sep</h5>
+          After submitting the addresses and telephone numbers of those who expressed support of a Hollingbourne Hill cabinet to the Openreach, they responded on 21st Sep with the below:<br>
+          <div class="bs-callout bs-callout-default bs-callout-xl">
+            <i>
+              Thank you for providing the list of addresses you wish to be included in the Community Fibre Project. We have now done an initial investigation and gathered the info we need in order to send this over to our planning team to provide an initial cost (ball park figure) – this may take 10-15 working days.<br><br>
+              Once these costs have been determined, we can move on to the next stage. Some areas may be eligible for vouchers to part fund a project. Please note, this is not something Openreach have any power over and it is down to the Department of Digital, Media, Culture and Sport (DCMS). The vouchers are based on area and eligibility.<br><br>
+              We will keep you informed throughout the process and let you know of any further information we need as we progress.<br>
+            </i>
+          </div>
+    
+            Once I receive this from Openreach I will provide an update on here. <br><br>
+    
+            It has also been brought to my attention by one of the members of our community that we may be eligible for further, additional funding via KCC’s ’Top-Up Voucher’:<br>
+            <div class="bs-callout bs-callout-default bs-callout-xl">
+                <i>
+                  From September 2020 residents in Kent will be able to claim up to <b>£5,500 per residence and up to £3,500 per businesses</b>. The Kent Top Up scheme can only be used in conjunction with the Rural Gigabit Voucher Scheme and will give both residential and businesses a combined value of up to <b>£7,000</b> available per eligible premises.
+                </i>
+            </div>
+            This substantial increase in available funding should strengthen our position further.
+                </div>
+    
       </div>
 
-Once I receive this from Openreach I will provide an update on here. <br><br>
+      <!-- </div> -->
 
-It has also been brought to my attention by one of the members of our community that we may be eligible for further, additional funding via KCC’s ’Top-Up Voucher’:<br>
-<div class="bs-callout bs-callout-default bs-callout-xl">
-    <i>
-      From September 2020 residents in Kent will be able to claim up to <b>£5,500 per residence and up to £3,500 per businesses</b>. The Kent Top Up scheme can only be used in conjunction with the Rural Gigabit Voucher Scheme and will give both residential and businesses a combined value of up to <b>£7,000</b> available per eligible premises.
-    </i>
-</div>
-This substantial increase in available funding should strengthen our position further.
+      <!-- Proposal  -->
+    <div class="tab-pane fade" id="pills-proposal" role="tabpanel" aria-labelledby="pills-proposal-tab">
+      <div class="alert alert-success">
+        Grants worth <b>£2,500</b> per residential property, and <b>£3,500</b> per business, are available now to improve our internet service.
+      </div>
+
+      <p><b>Fellow residents of Hollingbourne Hill and the surrounding postcodes,</b><br><br>
+      Properties and businesses listed within the postcodes; <b>ME17 1QJ, ME17 1QL</b> and <b>ME17 1QR</b> all currently receive internet speeds of less than <b>10 Mbps.</b><br><br>
+      This is due to the 2.5 - 3.2 km distance between these postcodes and the Hollingbourne exchange located at <a target="_blank" href="https://goo.gl/maps/sjB5RvRW5GMigPfb7">78 Eyhorne Street</a>.<br><br>
+      Whilst the majority of the village can receive speeds of up to <b>74 Mbps</b>, everyone located around the top of Hollingbourne Hill and beyond, are unable to achieve anywhere close to those speeds.<br><br>
+      Due to the relatively small number of properties at the above postcodes, in addition to their distance from the exchange, previously it has not been commercially viable for Openreach/BT to install a cabinet within our area, to provide an improved internet service. <br><br>
+      <b>However</b>, as part of the UK Government’s election pledge to bring broadband speeds of up to <b>1,000 Mbps</b> to the whole country by 2025, rural premises with broadband speeds of less than <b>100 Mbps</b> can use vouchers worth <b>£1,500</b> per home and up to <b>£3,500</b> per business, to support the cost of installing new fast and reliable service. This is via the <a target="_blank" href="https://www.gov.uk/government/publications/rgc-programme-key-information">Government’s Rural Gigabit Connectivity Programme.</a><br><br>
+      Kent County Council <a target="_blank" href="https://www.kent.gov.uk/leisure-and-community/broadband/broadband-voucher-schemes/kent-broadband-top-up-voucher">will also top up these voucher payments to residential properties by an additional £1,000, </a><b>bringing the total available funding per property to £2,500.</b> <br><br>
+      Considering we all receive just <b>10 Mbps</b> or lower, <b>this is our opportunity to improve our internet speed and reliability, as a community.</b> <br><br>
+      This is required to support in an increasing number of internet-capable devices in the home, which include: <br><br>
+      <b>Mobile Phones</b> - Whatsapp, FaceTime<br>
+      <b>Desktop Computer & Laptops</b><br>
+      <b>iPads and Tablets</b><br>
+      <b>Smart TVs</b> - Netflix, Amazon Prime Video, BBC iPlayer, ITV Player, Now TV, Youtube, BT TV<br><br>
+      All of these devices compete for the same limited bandwidth, and basic broadband services with slow speeds is increasingly becoming a major bottleneck. <br><br>
+      The recent <b>COVID-19</b> lockdown measures have highlighted this issue further. Keeping in contact with families during these difficult times (often via the internet) was made harder due to sluggish speed and reliability. Equally, businesses in the local area that rely on the internet may have experienced a further obstacle to operate.<br><br>
+      Additionally, a recent <a target="_blank" href="https://www.ispreview.co.uk/index.php/2020/07/62-of-brits-might-not-buy-a-house-without-strong-broadband.html">survey</a> by Internet Service Provider TalkTalk found 62% of British people admit they would consider <b>NOT</b> buying a house if it didn’t have a “strong, reliable internet connection”. Overall 53% of respondents said they consider a “fast, reliable internet connection” a priority when house hunting, which has almost <b>doubled to 93% when answered post COVID-19.</b><br><br>
+      As mentioned previously, the cost of installing a local cabinet to serve us all has not been viable due to the cost of installation, which on a UK average basis is <a target="_blank" href="https://www.ispreview.co.uk/index.php/2016/03/bt-reveal-fttc-broadband-cabinet-costs-bduk-confirm-delays.html">£27,500</a>. <i>(It should be noted this is an average across the UK and is dependant on the number of properties, location etc)</i> <br><br>
+      Given the grants (£2,500 per home, £3,500 per business) available by both the Government and KCC, this cost <b>may</b> be completely covered. <b>It will however be dependant upon us, as a community, coming together, to demand a faster connection.</b> Pooling all of our grants/vouchers together will increase the chances of a new cabinet being installed locally, providing us all a reliable and fast internet connection.<br>
+      <div class="alert alert-danger">
+        A final cost will not be given by Openreach/BT until all properties and businesses requesting a faster connection have been accounted for.
+      </div>
+        In order to receive this quote, <b>each property and business that wishes to benefit from an improvement of speed and reliability of their internet service, needs to provide their address and landline number, which will be passed on to Openreach/BT.</b> By providing your address and telephone number, Openreach/BT can accurately assess the cost, demand, and the total value of all grants. This is a requirement to receive a quote and <b>is in no way an obligation of any form.</b> <br><br>
+        Once a quote has been received, and the total amount of Government and KCC funding is totalled, we can, as a community, assess our options going forward. The more properties/businesses that express an interest, the likelihood of the total cost being covered by grants, is increased. <br><br>
+      <div class="alert alert-success">
+        <b>If this is something you wish to support, please complete this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHeJkJoz9Wm39H_T6VbHZQsbtOz6RCik1v0FucWHffEGmPAA/viewform?usp=sf_link">short 3 minute survey.</b></a><br><br>
+        Alternatively, please send your address and telephone number to: <a href="mailto:HollingbourneHillCabinet@gmail.com?subject=Support%20for%20the%20Hollingbourne%20Hill%20Cabinet&body=I%20wish%20to%20support%20the%20Hollingbourne%20Hill%20Openreach%2FBT%20cabinet%20proposal.%20%0D%0AMy%20Address%20is%3A%20%0D%0AMy%20landline%20telephone%20number%20is%3A%20%0D%0A%0D%0AI%20agree%20for%20the%20above%20details%20to%20be%20passed%20on%20to%20Openreach%2FBT%20for%20the%20purposes%20of%20obtaining%20a%20no%20obligation%20quote%2C%20for%20the%20cost%20of%20a%20cabinet%20at%20top%20of%20the%20Hollingbourne%20Hill%20area%2C%20to%20improve%20our%20internet%20speed%20and%20reliability.">HollingbourneHillCabinet@gmail.com</a> <br>
+      </div>
+      <div class="alert alert-info">
+        Please Respond by 14th September
+      </div>
     </div>
-    <div class="alert alert-success">
-                Grants worth <b>£2,500</b> per residential property, and <b>£3,500</b> per business, are available now to improve our internet service.</div>
-
-
-
-<p><b>Fellow residents of Hollingbourne Hill and the surrounding postcodes,</b><br><br>
-    
-    Properties and businesses listed within the postcodes; <b>ME17 1QJ, ME17 1QL</b> and <b>ME17 1QR</b> all currently receive internet speeds of less than <b>10 Mbps.</b><br><br>
-    
-    This is due to the 2.5 - 3.2 km distance between these postcodes and the Hollingbourne exchange located at <a target="_blank" href="https://goo.gl/maps/sjB5RvRW5GMigPfb7">78 Eyhorne Street</a>.<br><br>
-    
-    Whilst the majority of the village can receive speeds of up to <b>74 Mbps</b>, everyone located around the top of Hollingbourne Hill and beyond, are unable to achieve anywhere close to those speeds.<br><br>
-
-    Due to the relatively small number of properties at the above postcodes, in addition to their distance from the exchange, previously it has not been commercially viable for Openreach/BT to install a cabinet within our area, to provide an improved internet service. <br><br>
-    
-    <b>However</b>, as part of the UK Government’s election pledge to bring broadband speeds of up to <b>1,000 Mbps</b> to the whole country by 2025, rural premises with broadband speeds of less than <b>100 Mbps</b> can use vouchers worth <b>£1,500</b> per home and up to <b>£3,500</b> per business, to support the cost of installing new fast and reliable service. This is via the <a target="_blank" href="https://www.gov.uk/government/publications/rgc-programme-key-information">Government’s Rural Gigabit Connectivity Programme.</a><br><br>
-    
-    Kent County Council <a target="_blank" href="https://www.kent.gov.uk/leisure-and-community/broadband/broadband-voucher-schemes/kent-broadband-top-up-voucher">will also top up these voucher payments to residential properties by an additional £1,000, </a><b>bringing the total available funding per property to £2,500.</b> <br><br>
-
-    
-    Considering we all receive just <b>10 Mbps</b> or lower, <b>this is our opportunity to improve our internet speed and reliability, as a community.</b> <br><br>
-    
-    This is required to support in an increasing number of internet-capable devices in the home, which include: <br><br>
-    
-    <b>Mobile Phones</b> - Whatsapp, FaceTime<br>
-    <b>Desktop Computer & Laptops</b><br>
-    <b>iPads and Tablets</b><br>
-    <b>Smart TVs</b> - Netflix, Amazon Prime Video, BBC iPlayer, ITV Player, Now TV, Youtube, BT TV<br><br>
-    
-    All of these devices compete for the same limited bandwidth, and basic broadband services with slow speeds is increasingly becoming a major bottleneck. <br><br>
-    
-    The recent <b>COVID-19</b> lockdown measures have highlighted this issue further. Keeping in contact with families during these difficult times (often via the internet) was made harder due to sluggish speed and reliability. Equally, businesses in the local area that rely on the internet may have experienced a further obstacle to operate.<br><br>
-    
-    Additionally, a recent <a target="_blank" href="https://www.ispreview.co.uk/index.php/2020/07/62-of-brits-might-not-buy-a-house-without-strong-broadband.html">survey</a> by Internet Service Provider TalkTalk found 62% of British people admit they would consider <b>NOT</b> buying a house if it didn’t have a “strong, reliable internet connection”. Overall 53% of respondents said they consider a “fast, reliable internet connection” a priority when house hunting, which has almost <b>doubled to 93% when answered post COVID-19.</b><br><br>
-      
-    As mentioned previously, the cost of installing a local cabinet to serve us all has not been viable due to the cost of installation, which on a UK average basis is <a target="_blank" href="https://www.ispreview.co.uk/index.php/2016/03/bt-reveal-fttc-broadband-cabinet-costs-bduk-confirm-delays.html">£27,500</a>. <i>(It should be noted this is an average across the UK and is dependant on the number of properties, location etc)</i> <br><br>
-
-    
-    Given the grants (£2,500 per home, £3,500 per business) available by both the Government and KCC, this cost <b>may</b> be completely covered. <b>It will however be dependant upon us, as a community, coming together, to demand a faster connection.</b> Pooling all of our grants/vouchers together will increase the chances of a new cabinet being installed locally, providing us all a reliable and fast internet connection.<br>
-    
-    <div class="alert alert-danger">
-    A final cost will not be given by Openreach/BT until all properties and businesses requesting a faster connection have been accounted for.</div>
-    
-    In order to receive this quote, <b>each property and business that wishes to benefit from an improvement of speed and reliability of their internet service, needs to provide their address and landline number, which will be passed on to Openreach/BT.</b> By providing your address and telephone number, Openreach/BT can accurately assess the cost, demand, and the total value of all grants. This is a requirement to receive a quote and <b>is in no way an obligation of any form.</b> <br><br>
-    
-    Once a quote has been received, and the total amount of Government and KCC funding is totalled, we can, as a community, assess our options going forward. The more properties/businesses that express an interest, the likelihood of the total cost being covered by grants, is increased. <br><br>
-    <div class="alert alert-success">
-    <b>If this is something you wish to support, please complete this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHeJkJoz9Wm39H_T6VbHZQsbtOz6RCik1v0FucWHffEGmPAA/viewform?usp=sf_link">short 3 minute survey.</b></a><br><br>
-
-    Alternatively, please send your address and telephone number to: <a href="mailto:HollingbourneHillCabinet@gmail.com?subject=Support%20for%20the%20Hollingbourne%20Hill%20Cabinet&body=I%20wish%20to%20support%20the%20Hollingbourne%20Hill%20Openreach%2FBT%20cabinet%20proposal.%20%0D%0AMy%20Address%20is%3A%20%0D%0AMy%20landline%20telephone%20number%20is%3A%20%0D%0A%0D%0AI%20agree%20for%20the%20above%20details%20to%20be%20passed%20on%20to%20Openreach%2FBT%20for%20the%20purposes%20of%20obtaining%20a%20no%20obligation%20quote%2C%20for%20the%20cost%20of%20a%20cabinet%20at%20top%20of%20the%20Hollingbourne%20Hill%20area%2C%20to%20improve%20our%20internet%20speed%20and%20reliability.">HollingbourneHillCabinet@gmail.com</a> <br>
-</div>
-<div class="alert alert-info">Please Respond by 14th September</div>
     <div class="alert alert-warning">
-    Any updates that Openreach/BT provide, will be emailed to you in addition to being posted on this website  <a target="_blank" href="https://HollingbourneHillCabinet.github.io">HollingbourneHillCabinet.github.io</a></div><br>
+      Any updates that Openreach/BT provide, will be posted on this website  <a target="_blank" href="https://HollingbourneHillCabinet.github.io">HollingbourneHillCabinet.github.io</a>
+    </div><br>
     
-
     <h3>Lets improve our internet service <b>as a community!</b></h3><br>
+    Ross McLoone (Resident at Hollingbourne Hill)<br>
+    <a href=tel:07545971285>Tel: 07545 971 285</a><br>
+    <a href="mailto:HollingbourneHillCabinet@gmail.com">HollingbourneHillCabinet@gmail.com</a><br>
     
-      
-      
+    </p>
+
+  <div class="alert alert-secondary" role="alert">
+    Page Last updated: Sun 1 Nov 2020
+  </div>
+</div>
+</body>
+</html>
       <!-- <div class="bs-callout bs-callout-warning bs-callout-xl">
         <h5>Stage 2 - Community Engagement</h5>
         Engage with community and collect the addresses of people and businesses who are interested.
@@ -242,15 +283,3 @@ This substantial increase in available funding should strengthen our position fu
     <!-- <div class="container">
     <img src="https://i.imgur.com/A7Zigml.png" width=75% height=75%>
     </div> -->
-    Ross McLoone (Resident at Hollingbourne Hill)<br>
-    <a href=tel:07545971285>Tel: 07545 971 285</a><br><br>
-    
-</p>
-
-
-<div class="alert alert-secondary" role="alert">
-    Page Last updated: Fri 2 Oct 2020
-  </div>
-</div>
-</body>
-</html>
